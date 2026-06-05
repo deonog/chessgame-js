@@ -1,0 +1,25 @@
+#chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 64px);
+  grid-template-rows: repeat(8, 64px);
+  width: 512px;
+  border: 1px solid #000000;
+}
+
+#chess-board div {
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid blue;
+  }
+}
+
+.dark {
+  background: #b58863;
+  color: #000;
+}
+
+.light {
+  background: #f0d9b5;
+  color: #000;
+}
